@@ -1,0 +1,20 @@
+{
+  "name": "xhost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cache": "appcache-manifest \"**/**/*.{html,css,js,bin,json}\" -o cache.manifest --network-star -p /xhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xperiments/xhost.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xperiments/xhost/issues"
+  },
+  "homepage": "https://github.com/xperiments/xhost#readme"
+}

@@ -1,0 +1,292 @@
+{
+  "fan": {
+    "smallButtons": true,
+    "items": [
+      {
+        "name": "Fan 50°C",
+        "action": "setFan",
+        "actionParams": { "data": 50 }
+      },
+      {
+        "name": "Fan 55°C",
+        "action": "setFan",
+        "actionParams": { "data": 55 }
+      },
+      {
+        "name": "Fan 60°C",
+        "action": "setFan",
+        "actionParams": { "data": 60 }
+      },
+      {
+        "name": "Fan 65°C",
+        "action": "setFan",
+        "actionParams": { "data": 65 }
+      },
+      {
+        "name": "Fan 70°C",
+        "action": "setFan",
+        "actionParams": { "data": 70 }
+      },
+      {
+        "name": "Fan 75°C",
+        "action": "setFan",
+        "actionParams": { "data": 75 }
+      },
+      { "name": "Fan 80°C", "action": "setFan", "actionParams": { "data": 80 } }
+    ]
+  },
+  "main": {
+    "items": [
+      {
+        "name": "FTP",
+        "action": "postBinaryPayload",
+        "actionParams": "ftp.bin",
+        "desc": "A full access FTP server for the PS4",
+        "hideOffline": true
+      },
+      {
+        "name": "App2USB",
+        "action": "postBinaryPayload",
+        "actionParams": "app2usb.bin",
+        "desc": "Move installed games to an external USB drive"
+      },
+      {
+        "name": "Dump Game",
+        "action": "postBinaryPayload",
+        "actionParams": "app-dumper.bin",
+        "desc": "Dump Games to a USB drive to be able to create fpkg files"
+      }
+    ]
+  },
+  "utils": {
+    "items": [
+      {
+        "action": "postBinaryPayload",
+        "name": "Orbis Toolbox",
+        "actionParams": "Orbis-Toolbox-900.bin"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "DB Backup",
+        "actionParams": "backupdb.bin"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "DB Restore",
+        "actionParams": "restoredb.bin"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "Rif renamer",
+        "actionParams": "rifrenamer.bin"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "History Blocker",
+        "actionParams": "historyblocker.bin"
+      },
+      {
+        "name": "ToDex",
+        "action": "postBinaryPayload",
+        "actionParams": "ToDex.bin",
+        "desc": "Unlocks some debug features available on testkit"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "Exit IDU",
+        "actionParams": "exitidu.bin"
+      }
+    ]
+  },
+  "switches": {
+    "items": [
+      {
+        "name": "Enable Update",
+        "action": "postBinaryPayload",
+        "actionParams": "enbaleupdates.bin",
+        "desc": "Enables System Updates"
+      },
+      {
+        "name": "Disable Updates",
+        "action": "postBinaryPayload",
+        "actionParams": "disableupdates.bin",
+        "desc": "Disable System Updates"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "Disable ASLR",
+        "actionParams": "disableaslr.bin"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "Enable Browser",
+        "actionParams": "enbalebrowser.bin"
+      }
+    ]
+  },
+  "debug": {
+    "items": [
+      {
+        "action": "postBinaryPayload",
+        "name": "WebRTE",
+        "actionParams": "WebRTE.bin"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "Ps4debug",
+        "actionParams": "ps4debug.bin"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "Kernel Dumper",
+        "actionParams": "kerneldumper.bin"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "Module Dumper",
+        "actionParams": "mdumper.bin"
+      },
+      {
+        "action": "postBinaryPayload",
+        "name": "Permanent UART",
+        "actionParams": "permanentuart.bin"
+      }
+    ]
+  },
+  "linux": {
+    "items": [
+      {
+        "name": "Linux 1GB",
+        "action": "loadLinux",
+        "actionParams": { "data": 1 }
+      },
+      {
+        "name": "Linux 2GB",
+        "action": "loadLinux",
+        "actionParams": { "data": 2 }
+      },
+      {
+        "name": "Linux 3GB",
+        "action": "loadLinux",
+        "actionParams": { "data": 3 }
+      },
+      {
+        "name": "Linux 4GB",
+        "action": "loadLinux",
+        "actionParams": { "data": 4 }
+      },
+      {
+        "name": "Linux 5GB",
+        "action": "loadLinux",
+        "actionParams": { "data": 5 }
+      }
+    ]
+  },
+  "mods": {
+    "hideOffline": true,
+    "items": [
+      {
+        "name": "GTAV A100",
+        "actionParams": "mods/gtava0.bin",
+        "desc": "GTAV ArabicGuy 1.00 by Karo for 900 L1+R1 ",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "GTAV A127",
+        "actionParams": "mods/gtava1.bin",
+        "desc": "GTAV ArabicGuy 1.27 by rfoodxmodz fixed by Karo for 900 ==> + []",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "GTAV A132",
+        "actionParams": "mods/gtava2.bin",
+        "desc": "GTAV ArabicGuy 1.32 by rfoodxmodz fixed by Karo for 900",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "GTAV A133",
+        "actionParams": "mods/gtava3.bin",
+        "desc": "GTAV ArabicGuy 1.33 by rfoodxmodz for 900",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "GTAV BQ133",
+        "actionParams": "mods/BeefQueefMod.bin",
+        "desc": "GTAV BeefQueefMod 1.33 by GraFfix_221211 for 900",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "GTAV BQ134",
+        "actionParams": "mods/BeefQueefMod134.bin",
+        "desc": "GTAV BeefQueefMod 1.34 by GraFfix_221211 for 900 ",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "GTAV BQ138",
+        "actionParams": "mods/BeefQueefMod138.bin",
+        "desc": "GTAV BeefQueefMod 1.38 by GraFfix_221211 for 900",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "GTAV MB127",
+        "actionParams": "mods/gtavmb127.bin",
+        "desc": "GTAV Menu-Base 1.27 Ported by Karo for 900 ==> + []",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "GTAV LTS127",
+        "actionParams": "mods/gtava3.bin",
+        "desc": "GTAV LTS 1.27 Ported by Karo for 900 ==> + []",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "GTAV Ex135",
+        "actionParams": "mods/LushModz-1.0-9.00.bin",
+        "desc": "GTAV Expulsion Mode Menu 1.35 by LushModz for 900 ",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "GTAV W138",
+        "actionParams": "mods/WildeModz-1.38.bin",
+        "desc": "GTAV Expulsion Mode Menu 1.38 v1.2 by x_WildeModz_x for 900 ",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "RDR2 V1.00",
+        "actionParams": "mods/Oysters1.00.bin",
+        "desc": "Red dead redemption 2 mod  menu 1.13 V1.3.4 by RF0oDxM0Dz (R1 + Square)",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "RDR2 V1.13",
+        "actionParams": "mods/Oysters1.13.bin",
+        "desc": "Red dead redemption 2 mod  menu 1.13 V1.3.4 by RF0oDxM0Dz (R1 + Square)",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "RDR2 V1.19",
+        "actionParams": "mods/Oysters1.19.bin",
+        "desc": "Red dead redemption 2 mod  menu 1.19 V1.3.4 by RF0oDxM0Dz (R1 + Square)",
+        "action": "postBinaryPayload"
+      },
+      {
+        "name": "RDR2 V1.24",
+        "actionParams": "mods/Oysters1.24.bin",
+        "desc": "Red dead redemption 2 mod  menu 1.24 V1.3.4 by RF0oDxM0Dz (R1 + Square)",
+        "action": "postBinaryPayload"
+      }
+    ]
+  },
+  "xhost": {
+    "items": [
+      {
+        "name": "xhost v1.0",
+        "desc": "xps3riments"
+      },
+      {
+        "name": "Thanks",
+        "desc": "Sleirsgoevy , Al Azif , ChendoChap , SiSTRo ,Specter ,Znullptr, CelesteBlue, zecoxao"
+      }
+    ]
+  }
+}
