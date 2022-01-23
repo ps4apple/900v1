@@ -7,7 +7,7 @@
     <script>
       const action__postBinaryPayload = (file, responseTranformer) => {
         out_jb = "AllPL";
-        fetch("/xhost/" + file)
+        fetch("/900/" + file)
           .then((response) => response.arrayBuffer())
           .then((buffer) => {
             if (responseTranformer) {
