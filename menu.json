@@ -124,64 +124,6 @@
       }
     ]
   },
-  "debug": {
-    "items": [
-      {
-        "action": "postBinaryPayload",
-        "name": "WebRTE",
-        "actionParams": "WebRTE.bin"
-      },
-      {
-        "action": "postBinaryPayload",
-        "name": "Ps4debug",
-        "actionParams": "ps4debug.bin"
-      },
-      {
-        "action": "postBinaryPayload",
-        "name": "Kernel Dumper",
-        "actionParams": "kerneldumper.bin"
-      },
-      {
-        "action": "postBinaryPayload",
-        "name": "Module Dumper",
-        "actionParams": "mdumper.bin"
-      },
-      {
-        "action": "postBinaryPayload",
-        "name": "Permanent UART",
-        "actionParams": "permanentuart.bin"
-      }
-    ]
-  },
-  "linux": {
-    "items": [
-      {
-        "name": "Linux 1GB",
-        "action": "loadLinux",
-        "actionParams": { "data": 1 }
-      },
-      {
-        "name": "Linux 2GB",
-        "action": "loadLinux",
-        "actionParams": { "data": 2 }
-      },
-      {
-        "name": "Linux 3GB",
-        "action": "loadLinux",
-        "actionParams": { "data": 3 }
-      },
-      {
-        "name": "Linux 4GB",
-        "action": "loadLinux",
-        "actionParams": { "data": 4 }
-      },
-      {
-        "name": "Linux 5GB",
-        "action": "loadLinux",
-        "actionParams": { "data": 5 }
-      }
-    ]
-  },
   "mods": {
     "hideOffline": true,
     "items": [
@@ -280,7 +222,7 @@
   "xhost": {
     "items": [
       {
-        "name": "xhost v1.0",
+        "name": "copylight by xhost v1.0",
         "desc": "xps3riments"
       },
       {
