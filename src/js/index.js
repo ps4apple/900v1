@@ -181,7 +181,7 @@ const renderMenu = () => {
 };
 
 const gotoKernelExploit = () => {
-  notify("Loading GoldHen2b2...");
+  notify("GoldHen 2.1 로딩중...");
   $(".iframe").contentWindow.action__postBinaryPayload(`src/pl/goldhen2b2.bin`);
 };
 
